@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+version="2.5">
+  
+  <servlet>
+  	<servlet-name>helloServlet</servlet-name>
+  	<!-- 
+  		要写完整的类名（包名类名都得写完整）
+  	 -->
+  	<servlet-class>web.HelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>addServlet</servlet-name>
+  	<servlet-class>web.AddEmpServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>listServlet</servlet-name>
+  	<servlet-class>web.ListEmpServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>delServlet</servlet-name>
+  	<servlet-class>web.DeleteEmpServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>loadServlet</servlet-name>
+  	<servlet-class>web.LoadEmpServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>updateServlet</servlet-name>
+  	<servlet-class>web.UpdateEmpServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>helloServlet</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>addServlet</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>listServlet</servlet-name>
+  	<url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>delServlet</servlet-name>
+  	<url-pattern>/del</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>loadServlet</servlet-name>
+  	<url-pattern>/load</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  	<servlet-name>updateServlet</servlet-name>
+  	<url-pattern>/upd</url-pattern>
+  </servlet-mapping>
+</web-app>
+
+
+
